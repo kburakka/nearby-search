@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let bounds = UIScreen.main.bounds
         window = UIWindow(frame: bounds)
         window?.makeKeyAndVisible()
-
+        AppRouter.shared.startApp()
         return true
     }
 

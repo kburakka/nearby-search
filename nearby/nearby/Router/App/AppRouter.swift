@@ -7,11 +7,13 @@
 
 import UIKit
 
-final class AppRouter: Router {
+final class AppRouter: Router, AppRouter.Routes {
+    // This typealias includes the routes which AppRouter can open
+    typealias Routes = HomeRoute
     
     static let shared = AppRouter()
     
     func startApp() {
-        // Navigate initial screen
+        pushHome()
     }
 }
