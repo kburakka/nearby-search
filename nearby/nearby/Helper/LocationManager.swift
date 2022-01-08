@@ -17,7 +17,6 @@ class LocationManager: NSObject {
     override init(){
         super.init()
         manager.delegate = self
-        checkAuthorizationStatus()
     }
     
     private func checkAuthorizationStatus() {
@@ -35,6 +34,7 @@ class LocationManager: NSObject {
     }
     
     func getUserLocation(completion: @escaping LocationClosure) {
+        checkAuthorizationStatus()
         didUpdateLocation = completion
     }
 }

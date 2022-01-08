@@ -8,4 +8,5 @@
 class Constants {
     static let baseUrl = "https://api.tomtom.com/search/2/"
     static let apiKey = "&key=zvv9U2NlIZ3bxmOHAZ7SQGntRRSpxOkH"
+    static var radius = 1000
 }

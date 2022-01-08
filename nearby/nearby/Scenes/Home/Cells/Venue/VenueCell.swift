@@ -47,10 +47,6 @@ class VenueCell: UICollectionViewCell, ReusableView {
         return label
     }()
     
-    private let arrowIcon: UIImageView = {
-        return UIImageView(image: UIImage (systemName: "arrow.right"))
-    }()
-    
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.addArrangedSubview(titleLabel)
@@ -78,14 +74,7 @@ class VenueCell: UICollectionViewCell, ReusableView {
         containerView.edgesToSuperview(insets: .init(top: 0, left: 20, bottom: 0, right: 20))
         
         containerView.addSubview(stackView)
-        stackView.edgesToSuperview(excluding: .trailing, insets: .init(top: 0, left: 10, bottom: 0, right: 10))
-        
-        containerView.addSubview(arrowIcon)
-        arrowIcon.height(20)
-        arrowIcon.width(20)
-        arrowIcon.centerYToSuperview()
-        arrowIcon.trailingToSuperview().constant = -5
-        arrowIcon.leadingToTrailing(of: stackView).constant = 5
+        stackView.edgesToSuperview(insets: .init(top: 0, left: 10, bottom: 0, right: 10))
     }
     
     func set(viewModel: VenueCellProtocol) {

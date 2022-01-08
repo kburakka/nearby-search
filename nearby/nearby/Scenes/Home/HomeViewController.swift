@@ -23,6 +23,11 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavBar()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         getUserLocation()
     }
     
@@ -35,6 +40,10 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
         collectionView.edgesToSuperview()
     }
     
+    func setupNavBar() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "Settings", style: .done, target: self, action: #selector(self.action(sender:)))
+    }
+    
     func getUserLocation() {
         LocationManager.shared.getUserLocation { [weak self] location in
             self?.getVenues(lat: location.coordinate.latitude, lng: location.coordinate.longitude)
@@ -42,11 +51,10 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
     }
     
     func getVenues(lat: Double, lng: Double) {
-        viewModel.fetchVenues(lat: lat, lng: lng, radius: 1000) { [weak self] in
+        viewModel.fetchVenues(lat: lat, lng: lng, radius: Constants.radius) { [weak self] in
             self?.collectionView.reloadData()
         }
     }
-    
 }
 
 // MARK: - UICollectionView DataSource
@@ -77,9 +85,12 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
-// MARK: - UICollectionViewDelegate
-extension HomeViewController: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        viewModel.didSelectItemAt(index: indexPath.row)
-    }
+// MARK: - Actions
+@objc
+extension HomeViewController {
+    func action(sender: UIBarButtonItem) {
+        viewModel.settingsTapped()
+   }
 }
+
+

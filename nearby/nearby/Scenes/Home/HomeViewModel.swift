@@ -16,7 +16,7 @@ protocol HomeViewDataSource {
 }
 
 protocol HomeViewEventSource {
-    func didSelectItemAt(index: Int)
+    func settingsTapped()
 }
 
 protocol HomeViewProtocol: HomeViewDataSource, HomeViewEventSource {}
@@ -52,8 +52,8 @@ final class HomeViewModel: BaseViewModel<HomeRouter>, HomeViewProtocol {
 
     }
     
-    func didSelectItemAt(index: Int) {
-        print(index)
+    func settingsTapped() {
+        router.pushSettings()
     }
     
     private func setVenueCellModels() {
