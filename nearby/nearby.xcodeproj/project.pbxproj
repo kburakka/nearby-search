@@ -38,6 +38,13 @@
 		B36C13AB2789F2B800067DAF /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = B36C13AA2789F2B800067DAF /* TinyConstraints */; };
 		B36C13AD2789F44700067DAF /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13AC2789F44700067DAF /* LocationManager.swift */; };
 		B36C13AF2789F58B00067DAF /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13AE2789F58B00067DAF /* Closures.swift */; };
+		B36C13B2278A03D600067DAF /* NearbyVenuesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13B1278A03D600067DAF /* NearbyVenuesRequest.swift */; };
+		B36C13B5278A044B00067DAF /* NearbyVenues.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13B4278A044B00067DAF /* NearbyVenues.swift */; };
+		B36C13B7278A046800067DAF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13B6278A046800067DAF /* Result.swift */; };
+		B36C13B9278A048000067DAF /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13B8278A048000067DAF /* Address.swift */; };
+		B36C13C1278A04E700067DAF /* GeoBias.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13C0278A04E700067DAF /* GeoBias.swift */; };
+		B36C13C3278A04FE00067DAF /* Poi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13C2278A04FE00067DAF /* Poi.swift */; };
+		B36C13CD278A055F00067DAF /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13CC278A055F00067DAF /* Summary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +98,13 @@
 		B36C13A72789F1A400067DAF /* HomeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRoute.swift; sourceTree = "<group>"; };
 		B36C13AC2789F44700067DAF /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		B36C13AE2789F58B00067DAF /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		B36C13B1278A03D600067DAF /* NearbyVenuesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVenuesRequest.swift; sourceTree = "<group>"; };
+		B36C13B4278A044B00067DAF /* NearbyVenues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVenues.swift; sourceTree = "<group>"; };
+		B36C13B6278A046800067DAF /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		B36C13B8278A048000067DAF /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		B36C13C0278A04E700067DAF /* GeoBias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoBias.swift; sourceTree = "<group>"; };
+		B36C13C2278A04FE00067DAF /* Poi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poi.swift; sourceTree = "<group>"; };
+		B36C13CC278A055F00067DAF /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +224,8 @@
 		B36C136B2789EB8000067DAF /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				B36C13B3278A043900067DAF /* Model */,
+				B36C13B0278A03B300067DAF /* Request */,
 				B36C13812789EE8D00067DAF /* Manager */,
 				B36C13802789EE8400067DAF /* Core */,
 			);
@@ -317,6 +333,27 @@
 				B36C13A72789F1A400067DAF /* HomeRoute.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		B36C13B0278A03B300067DAF /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				B36C13B1278A03D600067DAF /* NearbyVenuesRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		B36C13B3278A043900067DAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B36C13B4278A044B00067DAF /* NearbyVenues.swift */,
+				B36C13B6278A046800067DAF /* Result.swift */,
+				B36C13B8278A048000067DAF /* Address.swift */,
+				B36C13C0278A04E700067DAF /* GeoBias.swift */,
+				B36C13C2278A04FE00067DAF /* Poi.swift */,
+				B36C13CC278A055F00067DAF /* Summary.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,11 +494,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B36C13B7278A046800067DAF /* Result.swift in Sources */,
 				B36C13832789EEB300067DAF /* APIRequestAdapter.swift in Sources */,
+				B36C13C1278A04E700067DAF /* GeoBias.swift in Sources */,
 				B36C13772789ED4700067DAF /* Router.swift in Sources */,
 				B36C13982789F03B00067DAF /* Constans.swift in Sources */,
 				B36C13732789ED1E00067DAF /* Transition.swift in Sources */,
 				B36C13A42789F19700067DAF /* HomeRouter.swift in Sources */,
+				B36C13B9278A048000067DAF /* Address.swift in Sources */,
 				B36C13872789EECF00067DAF /* APIDecodableResponseRequest.swift in Sources */,
 				B36C13A82789F1A400067DAF /* HomeRoute.swift in Sources */,
 				B36C13AD2789F44700067DAF /* LocationManager.swift in Sources */,
@@ -471,9 +511,13 @@
 				B36C13852789EEBF00067DAF /* APIDataProvider.swift in Sources */,
 				B36C13362789E87B00067DAF /* AppDelegate.swift in Sources */,
 				B36C138D2789EEFC00067DAF /* RequestProtocol.swift in Sources */,
+				B36C13B2278A03D600067DAF /* NearbyVenuesRequest.swift in Sources */,
+				B36C13C3278A04FE00067DAF /* Poi.swift in Sources */,
+				B36C13CD278A055F00067DAF /* Summary.swift in Sources */,
 				B36C138B2789EEF300067DAF /* RequestEncoding.swift in Sources */,
 				B36C13912789EF2900067DAF /* DataProviderProtocol.swift in Sources */,
 				B36C13892789EEE700067DAF /* DecodableResponseRequest.swift in Sources */,
+				B36C13B5278A044B00067DAF /* NearbyVenues.swift in Sources */,
 				B36C13AF2789F58B00067DAF /* Closures.swift in Sources */,
 				B36C13A52789F19700067DAF /* HomeViewController.swift in Sources */,
 				B36C13A62789F19700067DAF /* HomeViewModel.swift in Sources */,
