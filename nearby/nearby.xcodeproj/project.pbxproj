@@ -35,6 +35,7 @@
 		B36C13A52789F19700067DAF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13A22789F19700067DAF /* HomeViewController.swift */; };
 		B36C13A62789F19700067DAF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13A32789F19700067DAF /* HomeViewModel.swift */; };
 		B36C13A82789F1A400067DAF /* HomeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13A72789F1A400067DAF /* HomeRoute.swift */; };
+		B36C13AB2789F2B800067DAF /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = B36C13AA2789F2B800067DAF /* TinyConstraints */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B36C13962789EFCE00067DAF /* Alamofire in Frameworks */,
+				B36C13AB2789F2B800067DAF /* TinyConstraints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +331,7 @@
 			name = nearby;
 			packageProductDependencies = (
 				B36C13952789EFCE00067DAF /* Alamofire */,
+				B36C13AA2789F2B800067DAF /* TinyConstraints */,
 			);
 			productName = nearby;
 			productReference = B36C13322789E87B00067DAF /* nearby.app */;
@@ -404,6 +407,7 @@
 			mainGroup = B36C13292789E87B00067DAF;
 			packageReferences = (
 				B36C13942789EFCE00067DAF /* XCRemoteSwiftPackageReference "Alamofire" */,
+				B36C13A92789F2B800067DAF /* XCRemoteSwiftPackageReference "TinyConstraints" */,
 			);
 			productRefGroup = B36C13332789E87B00067DAF /* Products */;
 			projectDirPath = "";
@@ -834,6 +838,14 @@
 				kind = branch;
 			};
 		};
+		B36C13A92789F2B800067DAF /* XCRemoteSwiftPackageReference "TinyConstraints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roberthein/TinyConstraints.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -841,6 +853,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B36C13942789EFCE00067DAF /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		B36C13AA2789F2B800067DAF /* TinyConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B36C13A92789F2B800067DAF /* XCRemoteSwiftPackageReference "TinyConstraints" */;
+			productName = TinyConstraints;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
