@@ -40,11 +40,14 @@
 		B36C13AF2789F58B00067DAF /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13AE2789F58B00067DAF /* Closures.swift */; };
 		B36C13B2278A03D600067DAF /* NearbyVenuesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13B1278A03D600067DAF /* NearbyVenuesRequest.swift */; };
 		B36C13B5278A044B00067DAF /* NearbyVenues.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13B4278A044B00067DAF /* NearbyVenues.swift */; };
-		B36C13B7278A046800067DAF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13B6278A046800067DAF /* Result.swift */; };
+		B36C13B7278A046800067DAF /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13B6278A046800067DAF /* Venue.swift */; };
 		B36C13B9278A048000067DAF /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13B8278A048000067DAF /* Address.swift */; };
 		B36C13C1278A04E700067DAF /* GeoBias.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13C0278A04E700067DAF /* GeoBias.swift */; };
 		B36C13C3278A04FE00067DAF /* Poi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13C2278A04FE00067DAF /* Poi.swift */; };
-		B36C13CD278A055F00067DAF /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13CC278A055F00067DAF /* Summary.swift */; };
+		B36C13D3278A106500067DAF /* VenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13D1278A106500067DAF /* VenueCell.swift */; };
+		B36C13D4278A106500067DAF /* VenueCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13D2278A106500067DAF /* VenueCellModel.swift */; };
+		B36C13D7278A108E00067DAF /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13D6278A108E00067DAF /* ReusableView.swift */; };
+		B36C13D9278A10A000067DAF /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13D8278A10A000067DAF /* UICollectionView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,11 +103,14 @@
 		B36C13AE2789F58B00067DAF /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
 		B36C13B1278A03D600067DAF /* NearbyVenuesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVenuesRequest.swift; sourceTree = "<group>"; };
 		B36C13B4278A044B00067DAF /* NearbyVenues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVenues.swift; sourceTree = "<group>"; };
-		B36C13B6278A046800067DAF /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		B36C13B6278A046800067DAF /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		B36C13B8278A048000067DAF /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		B36C13C0278A04E700067DAF /* GeoBias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoBias.swift; sourceTree = "<group>"; };
 		B36C13C2278A04FE00067DAF /* Poi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poi.swift; sourceTree = "<group>"; };
-		B36C13CC278A055F00067DAF /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
+		B36C13D1278A106500067DAF /* VenueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCell.swift; sourceTree = "<group>"; };
+		B36C13D2278A106500067DAF /* VenueCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCellModel.swift; sourceTree = "<group>"; };
+		B36C13D6278A108E00067DAF /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		B36C13D8278A10A000067DAF /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +251,7 @@
 		B36C136D2789EBA700067DAF /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B36C13D8278A10A000067DAF /* UICollectionView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -254,6 +261,7 @@
 			children = (
 				B36C139E2789F13F00067DAF /* ApiProvider.swift */,
 				B36C13AC2789F44700067DAF /* LocationManager.swift */,
+				B36C13D6278A108E00067DAF /* ReusableView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -327,6 +335,7 @@
 		B36C13A02789F17500067DAF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B36C13CE278A103900067DAF /* Cells */,
 				B36C13A12789F19700067DAF /* HomeRouter.swift */,
 				B36C13A22789F19700067DAF /* HomeViewController.swift */,
 				B36C13A32789F19700067DAF /* HomeViewModel.swift */,
@@ -347,13 +356,29 @@
 			isa = PBXGroup;
 			children = (
 				B36C13B4278A044B00067DAF /* NearbyVenues.swift */,
-				B36C13B6278A046800067DAF /* Result.swift */,
+				B36C13B6278A046800067DAF /* Venue.swift */,
 				B36C13B8278A048000067DAF /* Address.swift */,
 				B36C13C0278A04E700067DAF /* GeoBias.swift */,
 				B36C13C2278A04FE00067DAF /* Poi.swift */,
-				B36C13CC278A055F00067DAF /* Summary.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B36C13CE278A103900067DAF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B36C13D5278A107400067DAF /* Venue */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B36C13D5278A107400067DAF /* Venue */ = {
+			isa = PBXGroup;
+			children = (
+				B36C13D1278A106500067DAF /* VenueCell.swift */,
+				B36C13D2278A106500067DAF /* VenueCellModel.swift */,
+			);
+			path = Venue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,7 +519,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B36C13B7278A046800067DAF /* Result.swift in Sources */,
+				B36C13B7278A046800067DAF /* Venue.swift in Sources */,
+				B36C13D9278A10A000067DAF /* UICollectionView+Extension.swift in Sources */,
+				B36C13D7278A108E00067DAF /* ReusableView.swift in Sources */,
 				B36C13832789EEB300067DAF /* APIRequestAdapter.swift in Sources */,
 				B36C13C1278A04E700067DAF /* GeoBias.swift in Sources */,
 				B36C13772789ED4700067DAF /* Router.swift in Sources */,
@@ -507,13 +534,14 @@
 				B36C13AD2789F44700067DAF /* LocationManager.swift in Sources */,
 				B36C139B2789F10C00067DAF /* BaseViewModel.swift in Sources */,
 				B36C13932789EF3500067DAF /* RequestMethod.swift in Sources */,
+				B36C13D4278A106500067DAF /* VenueCellModel.swift in Sources */,
+				B36C13D3278A106500067DAF /* VenueCell.swift in Sources */,
 				B36C139D2789F11A00067DAF /* BaseViewController.swift in Sources */,
 				B36C13852789EEBF00067DAF /* APIDataProvider.swift in Sources */,
 				B36C13362789E87B00067DAF /* AppDelegate.swift in Sources */,
 				B36C138D2789EEFC00067DAF /* RequestProtocol.swift in Sources */,
 				B36C13B2278A03D600067DAF /* NearbyVenuesRequest.swift in Sources */,
 				B36C13C3278A04FE00067DAF /* Poi.swift in Sources */,
-				B36C13CD278A055F00067DAF /* Summary.swift in Sources */,
 				B36C138B2789EEF300067DAF /* RequestEncoding.swift in Sources */,
 				B36C13912789EF2900067DAF /* DataProviderProtocol.swift in Sources */,
 				B36C13892789EEE700067DAF /* DecodableResponseRequest.swift in Sources */,

@@ -8,3 +8,4 @@
 import CoreLocation
 
 typealias LocationClosure = ((CLLocation) -> Void)
+typealias VoidClosure = (() -> Void)

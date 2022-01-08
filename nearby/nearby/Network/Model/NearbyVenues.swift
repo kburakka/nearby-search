@@ -8,6 +8,5 @@
 import Foundation
 
 struct NearbyVenues: Codable {
-    let summary: Summary
-    let results: [ResultApi]
+    let results: [Venue]
 }
