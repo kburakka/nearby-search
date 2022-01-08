@@ -20,7 +20,6 @@ extension APIDecodableResponseRequest {
 // MARK: - URL
 extension APIDecodableResponseRequest {
     var url: String {
-        print(Constants.baseUrl + path + Constants.apiKey)
         return Constants.baseUrl + path + Constants.apiKey
     }
 }

@@ -38,7 +38,7 @@ final class HomeViewModel: BaseViewModel<HomeRouter>, HomeViewProtocol {
                 self?.venues = response.results
                 completion()
             case .failure(let error):
-                print(error)
+                self?.showAlert(title: "Error", message: error.localizedDescription)
             }
         }
     }

@@ -53,6 +53,9 @@
 		B36C13E2278A1D4F00067DAF /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13DF278A1D4F00067DAF /* SettingsViewModel.swift */; };
 		B36C13E4278A1D5C00067DAF /* SettingsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13E3278A1D5C00067DAF /* SettingsRoute.swift */; };
 		B36C13E6278A1DF700067DAF /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13E5278A1DF700067DAF /* PushTransition.swift */; };
+		B36C13E8278A2BC200067DAF /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13E7278A2BC200067DAF /* UIViewController+Extension.swift */; };
+		B36C13EA278A2D0F00067DAF /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13E9278A2D0F00067DAF /* UIApplication+Extension.swift */; };
+		B36C13EC278A2DD700067DAF /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13EB278A2DD700067DAF /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +124,9 @@
 		B36C13DF278A1D4F00067DAF /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		B36C13E3278A1D5C00067DAF /* SettingsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRoute.swift; sourceTree = "<group>"; };
 		B36C13E5278A1DF700067DAF /* PushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		B36C13E7278A2BC200067DAF /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		B36C13E9278A2D0F00067DAF /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		B36C13EB278A2DD700067DAF /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +269,8 @@
 			isa = PBXGroup;
 			children = (
 				B36C13D8278A10A000067DAF /* UICollectionView+Extension.swift */,
+				B36C13E7278A2BC200067DAF /* UIViewController+Extension.swift */,
+				B36C13E9278A2D0F00067DAF /* UIApplication+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -273,6 +281,7 @@
 				B36C139E2789F13F00067DAF /* ApiProvider.swift */,
 				B36C13AC2789F44700067DAF /* LocationManager.swift */,
 				B36C13D6278A108E00067DAF /* ReusableView.swift */,
+				B36C13EB278A2DD700067DAF /* Helper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -543,6 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B36C13B7278A046800067DAF /* Venue.swift in Sources */,
+				B36C13EA278A2D0F00067DAF /* UIApplication+Extension.swift in Sources */,
 				B36C13D9278A10A000067DAF /* UICollectionView+Extension.swift in Sources */,
 				B36C13D7278A108E00067DAF /* ReusableView.swift in Sources */,
 				B36C13832789EEB300067DAF /* APIRequestAdapter.swift in Sources */,
@@ -550,6 +560,7 @@
 				B36C13772789ED4700067DAF /* Router.swift in Sources */,
 				B36C13982789F03B00067DAF /* Constans.swift in Sources */,
 				B36C13732789ED1E00067DAF /* Transition.swift in Sources */,
+				B36C13E8278A2BC200067DAF /* UIViewController+Extension.swift in Sources */,
 				B36C13A42789F19700067DAF /* HomeRouter.swift in Sources */,
 				B36C13B9278A048000067DAF /* Address.swift in Sources */,
 				B36C13872789EECF00067DAF /* APIDecodableResponseRequest.swift in Sources */,
@@ -569,6 +580,7 @@
 				B36C138B2789EEF300067DAF /* RequestEncoding.swift in Sources */,
 				B36C13E0278A1D4F00067DAF /* SettingsRouter.swift in Sources */,
 				B36C13912789EF2900067DAF /* DataProviderProtocol.swift in Sources */,
+				B36C13EC278A2DD700067DAF /* Helper.swift in Sources */,
 				B36C13892789EEE700067DAF /* DecodableResponseRequest.swift in Sources */,
 				B36C13E4278A1D5C00067DAF /* SettingsRoute.swift in Sources */,
 				B36C13B5278A044B00067DAF /* NearbyVenues.swift in Sources */,

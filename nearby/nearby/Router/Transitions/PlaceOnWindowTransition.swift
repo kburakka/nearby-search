@@ -12,11 +12,7 @@ class PlaceOnWindowTransition: Transition {
     var viewController: UIViewController?
     
     func open(_ viewController: UIViewController) {
-        guard let window = (UIApplication
-                                .shared
-                                .connectedScenes
-                                .flatMap { ($0 as? UIWindowScene)?.windows ?? [] }
-                                .first { $0.isKeyWindow }) else {
+        guard let window = Helper.keyWindow() else {
             return
         }
         UIView.transition(with: window, duration: 0.5, options: .transitionCrossDissolve, animations: {
