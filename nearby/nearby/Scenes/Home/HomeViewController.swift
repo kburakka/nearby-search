@@ -12,6 +12,9 @@ final class HomeViewController: BaseViewController<HomeViewModel> {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
+        LocationManager.shared.getUserLocation { location in
+            print(location)
+        }
     }
     
 }

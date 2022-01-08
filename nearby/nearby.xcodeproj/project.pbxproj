@@ -36,6 +36,8 @@
 		B36C13A62789F19700067DAF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13A32789F19700067DAF /* HomeViewModel.swift */; };
 		B36C13A82789F1A400067DAF /* HomeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13A72789F1A400067DAF /* HomeRoute.swift */; };
 		B36C13AB2789F2B800067DAF /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = B36C13AA2789F2B800067DAF /* TinyConstraints */; };
+		B36C13AD2789F44700067DAF /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13AC2789F44700067DAF /* LocationManager.swift */; };
+		B36C13AF2789F58B00067DAF /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13AE2789F58B00067DAF /* Closures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		B36C13A22789F19700067DAF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B36C13A32789F19700067DAF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B36C13A72789F1A400067DAF /* HomeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRoute.swift; sourceTree = "<group>"; };
+		B36C13AC2789F44700067DAF /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		B36C13AE2789F58B00067DAF /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +219,7 @@
 		B36C136C2789EB9C00067DAF /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				B36C13AE2789F58B00067DAF /* Closures.swift */,
 				B36C138E2789EF1100067DAF /* Typealias.swift */,
 				B36C13972789F03B00067DAF /* Constans.swift */,
 			);
@@ -232,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				B36C139E2789F13F00067DAF /* ApiProvider.swift */,
+				B36C13AC2789F44700067DAF /* LocationManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -458,6 +464,7 @@
 				B36C13A42789F19700067DAF /* HomeRouter.swift in Sources */,
 				B36C13872789EECF00067DAF /* APIDecodableResponseRequest.swift in Sources */,
 				B36C13A82789F1A400067DAF /* HomeRoute.swift in Sources */,
+				B36C13AD2789F44700067DAF /* LocationManager.swift in Sources */,
 				B36C139B2789F10C00067DAF /* BaseViewModel.swift in Sources */,
 				B36C13932789EF3500067DAF /* RequestMethod.swift in Sources */,
 				B36C139D2789F11A00067DAF /* BaseViewController.swift in Sources */,
@@ -467,6 +474,7 @@
 				B36C138B2789EEF300067DAF /* RequestEncoding.swift in Sources */,
 				B36C13912789EF2900067DAF /* DataProviderProtocol.swift in Sources */,
 				B36C13892789EEE700067DAF /* DecodableResponseRequest.swift in Sources */,
+				B36C13AF2789F58B00067DAF /* Closures.swift in Sources */,
 				B36C13A52789F19700067DAF /* HomeViewController.swift in Sources */,
 				B36C13A62789F19700067DAF /* HomeViewModel.swift in Sources */,
 				B36C137A2789ED5800067DAF /* AppRouter.swift in Sources */,
