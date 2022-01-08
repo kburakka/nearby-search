@@ -13,6 +13,10 @@
 		B36C134D2789E87F00067DAF /* nearbyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C134C2789E87F00067DAF /* nearbyTests.swift */; };
 		B36C13572789E87F00067DAF /* nearbyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13562789E87F00067DAF /* nearbyUITests.swift */; };
 		B36C13592789E87F00067DAF /* nearbyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13582789E87F00067DAF /* nearbyUITestsLaunchTests.swift */; };
+		B36C13732789ED1E00067DAF /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13722789ED1E00067DAF /* Transition.swift */; };
+		B36C13752789ED2C00067DAF /* PlaceOnWindowTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13742789ED2C00067DAF /* PlaceOnWindowTransition.swift */; };
+		B36C13772789ED4700067DAF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13762789ED4700067DAF /* Router.swift */; };
+		B36C137A2789ED5800067DAF /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13792789ED5800067DAF /* AppRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,10 @@
 		B36C13522789E87F00067DAF /* nearbyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nearbyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36C13562789E87F00067DAF /* nearbyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nearbyUITests.swift; sourceTree = "<group>"; };
 		B36C13582789E87F00067DAF /* nearbyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nearbyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B36C13722789ED1E00067DAF /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		B36C13742789ED2C00067DAF /* PlaceOnWindowTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOnWindowTransition.swift; sourceTree = "<group>"; };
+		B36C13762789ED4700067DAF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B36C13792789ED5800067DAF /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,8 +194,36 @@
 		B36C136F2789EBC300067DAF /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				B36C13782789ED4A00067DAF /* App */,
+				B36C13712789ED0E00067DAF /* Transitions */,
+				B36C13702789ED0100067DAF /* Core */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		B36C13702789ED0100067DAF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B36C13762789ED4700067DAF /* Router.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B36C13712789ED0E00067DAF /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				B36C13722789ED1E00067DAF /* Transition.swift */,
+				B36C13742789ED2C00067DAF /* PlaceOnWindowTransition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		B36C13782789ED4A00067DAF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B36C13792789ED5800067DAF /* AppRouter.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,7 +356,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B36C13772789ED4700067DAF /* Router.swift in Sources */,
+				B36C13732789ED1E00067DAF /* Transition.swift in Sources */,
 				B36C13362789E87B00067DAF /* AppDelegate.swift in Sources */,
+				B36C137A2789ED5800067DAF /* AppRouter.swift in Sources */,
+				B36C13752789ED2C00067DAF /* PlaceOnWindowTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
