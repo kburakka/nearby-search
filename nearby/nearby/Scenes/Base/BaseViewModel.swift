@@ -28,11 +28,16 @@ class BaseViewModel<R: Router>: BaseViewModelProtocol {
     }
     
     func showLoadingView() {
-        print("Show Loading")
+        if let viewController = UIApplication.topViewController() {
+            viewController.showSpinner(onView: viewController.view)
+        }
     }
     
     func hideLoadingView() {
-        print("Hide Loading")
+        DispatchQueue.main.async {
+            spinner?.removeFromSuperview()
+            spinner = nil
+        }
     }
     
     func showAlert(title: String, message: String) {

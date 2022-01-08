@@ -32,7 +32,9 @@ final class HomeViewModel: BaseViewModel<HomeRouter>, HomeViewProtocol {
     
     func fetchVenues(lat: Double, lng: Double, radius: Int, completion: @escaping VoidClosure) {
         let request = NearbyVenuesRequest(lat: lat, lng: lng, radius: radius)
+        showLoadingView()
         dataProvider.request(for: request) { [weak self] result in
+            self?.hideLoadingView()
             switch result {
             case .success(let response):
                 self?.venues = response.results
@@ -49,7 +51,6 @@ final class HomeViewModel: BaseViewModel<HomeRouter>, HomeViewProtocol {
     
     func cellForItemAt(indexPathRow: Int) -> VenueCellModel {
         return venueCellModels[indexPathRow]
-
     }
     
     func settingsTapped() {

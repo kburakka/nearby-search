@@ -94,8 +94,8 @@
             filePath = "nearby/Scenes/Home/HomeViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "fetchVenues(lat:lng:radius:completion:)"
             landmarkType = "7">
          </BreakpointContent>
