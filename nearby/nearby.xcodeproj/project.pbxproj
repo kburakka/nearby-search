@@ -28,6 +28,9 @@
 		B36C13932789EF3500067DAF /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13922789EF3500067DAF /* RequestMethod.swift */; };
 		B36C13962789EFCE00067DAF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B36C13952789EFCE00067DAF /* Alamofire */; };
 		B36C13982789F03B00067DAF /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C13972789F03B00067DAF /* Constans.swift */; };
+		B36C139B2789F10C00067DAF /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C139A2789F10C00067DAF /* BaseViewModel.swift */; };
+		B36C139D2789F11A00067DAF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C139C2789F11A00067DAF /* BaseViewController.swift */; };
+		B36C139F2789F13F00067DAF /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36C139E2789F13F00067DAF /* ApiProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,9 @@
 		B36C13902789EF2900067DAF /* DataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderProtocol.swift; sourceTree = "<group>"; };
 		B36C13922789EF3500067DAF /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
 		B36C13972789F03B00067DAF /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		B36C139A2789F10C00067DAF /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		B36C139C2789F11A00067DAF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B36C139E2789F13F00067DAF /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,7 @@
 		B36C13692789EB3F00067DAF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B36C13992789F10000067DAF /* Base */,
 				B36C13402789E87E00067DAF /* LaunchScreen.storyboard */,
 			);
 			path = Scenes;
@@ -213,6 +220,7 @@
 		B36C136E2789EBB600067DAF /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				B36C139E2789F13F00067DAF /* ApiProvider.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -272,6 +280,15 @@
 				B36C13862789EECF00067DAF /* APIDecodableResponseRequest.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		B36C13992789F10000067DAF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B36C139A2789F10C00067DAF /* BaseViewModel.swift */,
+				B36C139C2789F11A00067DAF /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,7 +432,9 @@
 				B36C13982789F03B00067DAF /* Constans.swift in Sources */,
 				B36C13732789ED1E00067DAF /* Transition.swift in Sources */,
 				B36C13872789EECF00067DAF /* APIDecodableResponseRequest.swift in Sources */,
+				B36C139B2789F10C00067DAF /* BaseViewModel.swift in Sources */,
 				B36C13932789EF3500067DAF /* RequestMethod.swift in Sources */,
+				B36C139D2789F11A00067DAF /* BaseViewController.swift in Sources */,
 				B36C13852789EEBF00067DAF /* APIDataProvider.swift in Sources */,
 				B36C13362789E87B00067DAF /* AppDelegate.swift in Sources */,
 				B36C138D2789EEFC00067DAF /* RequestProtocol.swift in Sources */,
@@ -423,6 +442,7 @@
 				B36C13912789EF2900067DAF /* DataProviderProtocol.swift in Sources */,
 				B36C13892789EEE700067DAF /* DecodableResponseRequest.swift in Sources */,
 				B36C137A2789ED5800067DAF /* AppRouter.swift in Sources */,
+				B36C139F2789F13F00067DAF /* ApiProvider.swift in Sources */,
 				B36C138F2789EF1100067DAF /* Typealias.swift in Sources */,
 				B36C13752789ED2C00067DAF /* PlaceOnWindowTransition.swift in Sources */,
 			);
