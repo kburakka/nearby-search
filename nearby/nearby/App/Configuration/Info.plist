@@ -6,5 +6,7 @@
 	<string>We’ll use this to show nearby venues</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>We’ll use this to show nearby venues</string>
+    <key>UIUserInterfaceStyle</key>
+    <string>Light</string>
 </dict>
 </plist>
